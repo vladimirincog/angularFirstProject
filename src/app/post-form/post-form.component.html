@@ -1,0 +1,17 @@
+<div>
+  <input type="text"
+         class="form-control"
+         placeholder="Title..."
+         [(ngModel)] = "title"
+         value="{{title}}"
+         #titleInput
+  >
+  <input type="text"
+         class="form-control"
+         placeholder="Text..."
+         [(ngModel)] = "text"
+         value="{{text}}"
+  >
+  <button class="btn" (click)="addPost()">Добавить пост</button>
+  <button class="btn" (click)="focusTitle()">Фокус загаловка</button>
+</div>
